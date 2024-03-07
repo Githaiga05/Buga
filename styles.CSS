@@ -1,0 +1,20 @@
+/* am styling my image*/
+ <img src="YEAT. JPG" width="400" height="400" style="border: 10px solid blue">
+
+
+ /* am styling my paragraph*/
+h1,h2,h3
+        {
+            color:green
+        }
+        #p3
+        {
+            color:red
+        }
+       .pt
+       {background-color: purple}
+
+ /* am styling my tables*/
+   table,th, td{
+     border:2px solid black;
+ }

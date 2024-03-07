@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Html</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        h1,h2,h3
+        {
+            color:green
+        }
+        #p3
+        {
+            color:red
+        }
+       .pt
+       {background-color: purple}
+
+ ul li
+       {
+         lists-style-type: none;
+       }
+       #nav li a:active
+       {
+           color: #88beee;
+           font-weight: bold;
+       }
+
+       a
+       {
+         text-decoration:none;
+         padding:50px;
+         text-transform: uppercase;
+         color: white;
+       }
+
+      #nav li
+      {
+          display: inline;
+      }
+
+      #nav
+      {
+          background-color: #1a1a1f;
+          padding: 10px;
+      }
+
+
+      #home
+      {
+          font-size:40px;
+          text-decoration: 2px:2px:2px blue;
+          color: red;
+      }
+
+      #courses
+      {
+          font-size:40px;
+          text-decoration: 2px:2px:2px blue;
+          color: red;
+      }
+
+      #google
+      {
+          font-size:40px;
+          text-decoration: 2px:2px:2px blue;
+          color: red;
+      }
+
+       #enquiries
+      {
+          font-size:40px;
+          text-decoration: 2px:2px:2px blue;
+          color: red;
+      }
+
+
+
+    </style>
+</head>
+<body
+
+
+<!--navigation bar creation from lists-->
+
+<ul id="nav">
+    <li><a href="https://www.home.com" id="home">home</a> </li>
+    <li><a href="https://www.courses.com" id="courses">courses</a> </li>
+    <li><a href="https://www.google.com.com" id="google">google</a> </li>
+    <li><a href="https://www.enquiries.com" id="enquiries">enquiries</a> </li>
+
+
+</ul>
+
+    </style><br>
+
+</head>
+<style>
+
+ table,th, td
+
+</style>
+
+   <body style="text-align: center; background-color: grey">
+          <h2 style="color: red;">WELCOME TO THE SYSTEM</h2>
+          <p style="color: blue; font-size: 25px;font-style: italic ;">This is a great website to learn History in a very simple way. </p>
+    </body>
+
+   <!--Creating forms-->
+   <!-- When you use post.py the user won't know the code data-->
+   <!-- Required helps you not make a move on a form if you haven't filled anything-->
+
+   <!-- The labels just indicate what is being captured and the input type specifies the kind of data that is being input-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: linear-gradient(
+     105deg,
+     #88beee ,
+     #0a2e73
+ );
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration_form{
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.registration_form .title{
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white;
+  background:rgb(13, 98, 215);
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-top: -25px;
+  margin-left:-25px;
+  margin-right:-25px;
+}
+
+.form_wrap{
+  margin-top: 35px;
+}
+
+.form_wrap .input_wrap{
+  margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+  margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+  display: block;
+  margin-bottom: 3px;
+  color: #1a1a1f;
+}
+
+.form_wrap .input_grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_wrap .input_grp  input[type="text"]{
+  width: 165px;
+}
+
+.form_wrap  input[type="text"]{
+  width: 100%;
+  border-radius: 3px;
+  border: 1.3px solid #9597a6;
+  padding: 10px;
+  outline: none;
+}
+
+.form_wrap  input[type="text"]:focus{
+  border-color: #063abd;
+}
+
+.form_wrap ul{
+ border:1px solid rgb(115, 185, 235);
+  width:70%;
+  background: rgb(206, 238, 242);
+  margin-left: 15%;
+  padding: 8px 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form_wrap ul li:first-child{
+  margin-right: 15px;
+}
+
+.form_wrap ul .radio_wrap{
+  position: relative;
+  margin-bottom: 0;
+}
+
+.form_wrap ul .radio_wrap .input_radio{
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.form_wrap ul .radio_wrap span{
+  display: inline-block;
+  font-size: 17px;
+  padding: 3px 15px;
+  border-radius: 15px;
+  color: #101749;
+}
+
+.form_wrap .input_radio:checked ~ span{
+  background: #105ce2;
+  color:white;
+}
+
+.form_wrap .submit_btn{
+  width: 100%;
+  background: #0d6ad7;
+  padding: 10px;
+  border: 0;
+  color:white;
+  font-size:17px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form_wrap .submit_btn:hover{
+  background: #051c94;
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="registration_form">
+      <div class="title">
+        Registration Form
+      </div>
+
+      <form>
+        <div class="form_wrap">
+          <div class="input_grp">
+            <div class="input_wrap">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname">
+            </div>
+            <div class="input_wrap">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname">
+            </div>
+          </div>
+          <div class="input_wrap">
+            <label for="email">Email Address</label>
+            <input type="text" id="email">
+          </div>
+
+          <div class="input_wrap">
+            <label for="city">City</label>
+            <input type="text" id="city">
+          </div>
+          <div class="input_wrap">
+            <label for="country">Country</label>
+            <input type="text" id="country">
+          </div>
+
+          <div class="input_wrap">
+            <label>Gender</label>
+            <ul>
+              <li>
+                <label class="radio_wrap">
+                  <input type="radio" name="gender" value="male" class="input_radio" checked>
+                  <span>Male</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio_wrap">
+                  <input type="radio" name="gender" value="female" class="input_radio">
+                  <span>Female</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+
+
+          <div class="input_wrap">
+            <input type="submit" value="Register Now" class="submit_btn">
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+      </form>
+   </div>
+  </div><br>
+
+<table style="width:100%">
+  <tr>
+      <th> People </th>
+      <th>Time</th>
+      <th>Country</th>
+  </tr>
+
+    <tr>
+        <th><img src="People.jpeg": style="border-radius: 50%;"</th>
+      <th><img src="Time.jpeg": style="border-radius: 50%;"</th>
+      <th><img src="Eu%20.png": style="border-radius: 50%;"</th>
+  </tr>
+
+  <tr>
+     <td>Sean Smith</td>
+     <td>15:00GMT+</td>
+     <td>England</td>
+  </tr>
+  <tr>
+      <td>Robert Williams</td>
+      <td>17:00GMT+</td>
+      <td>France</td>
+  </tr>
+</table>
+
+
+
+  <h1>Hello World</h1>
+
+  <!--the text shadow property in CSS-->
+     <h2 style="text-shadow:10px 10px 10px black;color:blue">History as General</h2><br><br>
+ <!--this was our step two-->
+
+   <p><a href="#p2">Jump to paragraph 2</a></p><br>
+
+ <P style="text-shadow:6px 4px 2px purple; margin-left:10px;padding:200px;border:10px solid blue;background-color:white;color:green;text-align:center; background-image: url('History.png'); background-repeat: no-repeat; background-size: 100% 100%">
+     <!--margin property is used to create spacing outside a particular element
+     -the example is shown below-->
+     <!-- We are revising History -->
+     <h2>Paragraph 1</h2><B>History</B> is the study of past events and the written accounts of these events .<br>
+                                                  It provides a sense of where we have come from and what our heritage is, allowing us to understand our place in society and the forces that shape it .8 Okt 2023
+ </P>
+  <a href="https://www.google.com">Visit google</a><br><br>
+
+
+<hr>
+  <em>This is the image</em>
+    <br><br><img src="YEAT. JPG" width="400" height="400" style="margin ; border-radius:50%;">
+
+  <h3><p title="I'm a tooltip">This is the paragraph.</p></h3>
+
+
+    <p style="font-size:200%;">Point to note.<strong> The text is critical to the user</strong></p>
+
+
+     <p>
+      <h2> Paragraph 2</h2>
+      <p>Including storytelling in the social studies curriculum develops students' understanding of democratic ideals, cultural diversity, and participatory citizenship.
+      <br>Storytelling develops students' communication skills, motivates them to learn about the past and present,
+      <br>and creates a class bond through shared experiences.</p>
+
+  <p> To get more information about the reality of History around the world,
+      you can watch the documentaries of the day-to-day lives of the trade which was happening during the
+      <sub>19th century</sub>. <BR> <b>You can watch films related to it on</b>. The <abbr title="History of the past.Org">HOTP</abbr> 0n Google</p>
+
+  <p>
+      <!-- We used an id to change a specific color of a paragraph-->
+      <!-- id can only be used once-->
+
+      <h2 id="p3">Paragraph 3</h2> Because artillery is an indirect fire weapon system, the guns are rarely in line-of-sight of their target, often located miles away.[2] <br>
+       The observer serves as the eyes of the guns, by sending target locations and if necessary corrections to the fall of shot, usually by radio. <br>
+       Equipment used in the observer role ranges from binoculars to laser rangefinders to unmanned aerial vehicles
+  </p>
+
+  <p>The period of events before the invention of writing systems is considered prehistory.[4]
+      "History" is an umbrella term comprising past events as well as the memory, discovery, collection, organization, presentation, and interpretation of these events.
+      Historians seek knowledge of the past using historical sources such as written documents, oral accounts, art and material artifacts, and ecological markers.
+
+  </p>
+
+  <P>
+      <h2 Class="pt">Paragraph 4</h2>For centuries the Battery Commander had been responsible for controlling the fire of their battery.
+      This continued with the introduction of indirect fire in the early years of the 20th Century. However,
+      the First World War introduced 24 hour, seven days a week fighting.
+      Furthermore, indirect fire had increased the distance between the guns and their targets, and between the observers and their guns.
+      This led to the use of observing officers to act on behalf of the battery commander.
+      In the 1938 re-organization of the Royal Artillery batteries were divided into troops, with the troop commanders (Captains) as observing officers at an (OP)
+
+  </P>
+
+  <p>
+     <h2 class="pt">Paragraph 5</h2>The history of association football, more commonly known as football or soccer, stretches back at least to medieval times.[1][2][3] Some predecessors of football may date back to ancient Greece and Rome, and similar games were played in ancient China and Japan.[4] The history of football in Britain dates at least to the eighth century CE.[5]
+      The development of association football has its origins in medieval ball games and English public school games.
+      The modern game of association football originated in the mid-nineteenth century by the efforts of English football clubs to standardize the varying sets of football rules,<br> culminating in the formation of The Football Association (The FA) in London,
+      England, in 1863, and their issuing of the Laws of the Game in the same year6 </p>
+
+  </p>
+  <a href="https://NETFLIX.COM">Go to Netflix</a>
+<p> Click here to go to the next page </p>
+    <a href="Creating%20lists.html">click me</a>
+</body>
+</html>
